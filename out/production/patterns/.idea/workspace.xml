@@ -5,16 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e53de425-8849-476f-bf9a-13d9b18a4d07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structural/facade/refactoring_guru/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structural/facade/refactoring_guru/facade/VideoConversionFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structural/facade/refactoring_guru/library/AudioMixer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structural/facade/refactoring_guru/library/BitrateReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structural/facade/refactoring_guru/library/Codec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structural/facade/refactoring_guru/library/CodecFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structural/facade/refactoring_guru/library/MPEG4CompressionCodec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structural/facade/refactoring_guru/library/OggCompressionCodec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structural/facade/refactoring_guru/library/VideoFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/behavioral/strategy/refactoring_guru/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/behavioral/strategy/refactoring_guru/client/CreditCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/behavioral/strategy/refactoring_guru/client/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/behavioral/strategy/refactoring_guru/methods/PayByCreditCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/behavioral/strategy/refactoring_guru/methods/PayByPayPal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/behavioral/strategy/refactoring_guru/methods/PayStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/behavioral/strategy/wikipedia/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/behavioral/strategy/wikipedia/brakes/Brake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/behavioral/strategy/wikipedia/brakes/BrakeWithABS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/behavioral/strategy/wikipedia/brakes/IBrakeBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/behavioral/strategy/wikipedia/cars/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/behavioral/strategy/wikipedia/cars/SUV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/behavioral/strategy/wikipedia/cars/Sedan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/patterns/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/patterns/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +29,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -31,27 +37,54 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2VO7e1bMdEualVHjlVbX4ENnik5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "JDK20",
-    "last_opened_file_path": "C:/Users/admin/learning/patterns"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;JDK20&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/learning/patterns&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.structural.facade.refactoring_guru.Main">
+}</component>
+  <component name="RunManager" selected="Application.behavioral.strategy.wikipedia.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="patterns" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="behavioral.strategy.refactoring_guru.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="behavioral.strategy.refactoring_guru.Main" />
+      <module name="patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="behavioral.strategy.refactoring_guru.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="behavioral.strategy.wikipedia.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="behavioral.strategy.wikipedia.Main" />
+      <module name="patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="behavioral.strategy.wikipedia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -69,8 +102,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="structural.facade.wikipedia.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="structural.facade.wikipedia.Main" />
+      <module name="patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="structural.facade.wikipedia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.behavioral.strategy.wikipedia.Main" />
+        <item itemvalue="Application.behavioral.strategy.refactoring_guru.Main" />
+        <item itemvalue="Application.structural.facade.wikipedia.Main" />
         <item itemvalue="Application.structural.facade.refactoring_guru.Main" />
         <item itemvalue="Application.Main" />
       </list>
@@ -86,5 +135,9 @@
       <updated>1694695364909</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
   </component>
 </project>
