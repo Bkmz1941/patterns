@@ -1,0 +1,56 @@
+package behavioral.visitor.refactoring_guru.visitor;
+
+import behavioral.visitor.refactoring_guru.shapes.CompoundShape;
+import behavioral.visitor.refactoring_guru.shapes.Dot;
+import behavioral.visitor.refactoring_guru.shapes.Rectangle;
+import behavioral.visitor.refactoring_guru.shapes.Shape;
+
+public class XMLExportVisitor implements Visitor {
+    public String export(Shape... args) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("<?xml version=\"1.0\" encoding=\"utf-8\"?>" + "\n");
+        for (Shape shape : args) {
+            sb.append(shape.accept(this)).append("\n");
+        }
+        return sb.toString();
+    }
+
+    @Override
+    public String visitDot(Dot dot) {
+        return "<dot>" + "\n" +
+                "    <id>" + dot.getId() + "</id>" + "\n" +
+                "    <x>" + dot.getX() + "</x>" + "\n" +
+                "    <y>" + dot.getY() + "</y>" + "\n" +
+                "</dot>";
+    }
+
+    @Override
+    public String visitRectangle(Rectangle rectangle) {
+        return "<rectangle>" + "\n" +
+                "    <id>" + rectangle.getId() + "</id>" + "\n" +
+                "    <x>" + rectangle.getX() + "</x>" + "\n" +
+                "    <y>" + rectangle.getY() + "</y>" + "\n" +
+                "    <width>" + rectangle.getWidth() + "</width>" + "\n" +
+                "    <height>" + rectangle.getHeight() + "</height>" + "\n" +
+                "</rectangle>";
+    }
+
+    @Override
+    public String visitCompoundGraphic(CompoundShape cg) {
+        return "<compound_graphic>" + "\n" +
+                "   <id>" + cg.getId() + "</id>" + "\n" +
+                _visitCompoundGraphic(cg) +
+                "</compound_graphic>";
+    }
+
+    private String _visitCompoundGraphic(CompoundShape cg) {
+        StringBuilder sb = new StringBuilder();
+        for (Shape shape : cg.children) {
+            String obj = shape.accept(this);
+            // Proper indentation for sub-objects.
+            obj = "    " + obj.replace("\n", "\n    ") + "\n";
+            sb.append(obj);
+        }
+        return sb.toString();
+    }
+}
